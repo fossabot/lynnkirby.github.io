@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/lynnk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://arrak.is
+  * I am lynnk (https://keybase.io/lynnk) on keybase.
+  * I have a public key ASD0BuWHErcYhMTc8dwPRJs1ofmIGVTebBotqYwm9dqBigo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f406e58712b71884c4dcf1dc0f449b35a1f9881954de6c1a2da98c26f5da818a0a",
+      "host": "keybase.io",
+      "kid": "0120f406e58712b71884c4dcf1dc0f449b35a1f9881954de6c1a2da98c26f5da818a0a",
+      "uid": "b27bdc6e031c49da4194fd3ecbd51319",
+      "username": "lynnk"
+    },
+    "merkle_root": {
+      "ctime": 1525230985,
+      "hash": "82e074f3d267fafb879f8259f49bd3a8b6b27b859bac89b88bc16cc0e3f5bedea3779d0c71a27b3dedc240e7ad62bbdd141c11a8b88f30ccd2a1f9399750850f",
+      "hash_meta": "cf1a3df92003c461b15f925c289b259ef21ff8ee6ffdaaf6241b860662142b13",
+      "seqno": 2468419
+    },
+    "service": {
+      "entropy": "bZnBg312lMsmEXMWUe9/6UaM",
+      "hostname": "arrak.is",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.47"
+  },
+  "ctime": 1525231039,
+  "expire_in": 504576000,
+  "prev": "b5a8b36945b0ef4896a0ed463eacb4b7105f3e0c269f167817e3a4be1b656896",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg9AblhxK3GITE3PHcD0SbNaH5iBlU3mwaLamMJvXagYoKp3BheWxvYWTESpcCCcQgtaizaUWw70iWoO1GPqy0txBfPgwmnxZ4F+OkvhtlaJbEII6ohlwfL9iNkco57gqIDRwhPs0umFjM0lv/ch8/wyakAgHCo3NpZ8RAkAUQS5/Vi7b+ZDHiUg0BhENY5aICg2lR0pxXreGF+PTueyN8GfJoqMsS828SPltlGnvGfbY6nRuGO23ELBtlDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILCaDuvjlDM70dfNayEH6zvvy3USUmJPv3T4LsW5QLbBo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lynnk
+
+==================================================================
