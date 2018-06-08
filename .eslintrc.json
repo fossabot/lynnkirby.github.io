@@ -1,0 +1,83 @@
+{
+  "extends": "airbnb",
+
+  "plugins": [
+    "typescript"
+  ],
+
+  "parser": "typescript-eslint-parser",
+
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    // Prefer double-quotes for consistency with JSON and HTML.
+    "quotes": ["error", "double"],
+
+    // react-router-dom <Link> gets flagged by this rule.
+    // https://github.com/evcohen/eslint-plugin-jsx-a11y/issues/340
+    "jsx-a11y/anchor-is-valid": [
+      "error", {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ],
+
+    // I'm start enough to format arrow functions.
+    "arrow-body-style": "off",
+    "arrow-parens": "off",
+
+    // Misc. TypeScript rules.
+    "typescript/class-name-casing": "error",
+    "typescript/member-delimiter-style": "error",
+    "typescript/no-angle-bracket-type-assertion": "error",
+    "typescript/no-unused-vars": "error",
+    "typescript/no-use-before-define": "error",
+    "typescript/no-var-requires": "error",
+    "typescript/type-annotation-spacing": "error",
+
+    // Let TypeScript files be imported without an extension.
+    "import/extensions": ["error", "always", {
+      "js": "never",
+      "jsx": "never",
+      "ts": "never",
+      "tsx": "never"
+    }],
+
+    // Allow both JSX in both .jsx and .tsx files.
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }]
+  },
+
+  "settings": {
+    // Ensure TypeScript files are checked for exports.
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parser": "typescript-eslint-parser",
+      "rules": {
+        // Bug with no-undef and import/prefer-default-export.
+        // https://github.com/eslint/typescript-eslint-parser#known-issues
+        "no-undef": "off",
+        "import/prefer-default-export": "off",
+
+        // Don't need to check for prop-types use when using TypeScript.
+        "react/prop-types": "off"
+      }
+    }
+  ]
+}
